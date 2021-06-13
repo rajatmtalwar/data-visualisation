@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 4rem);
+}
+.header {
+  height: 4rem;
+  padding: 1rem;
+  box-shadow: 0 4px 13px -3px rgb(0 0 0 / 10%);
+}
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.sidebar {
+  min-width: 20rem;
+  border-right: 1px solid #cccccc47;
+  padding: 1rem;
+}
+.sectionHeading {
+  font-size: 1rem;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 1rem;
+}

@@ -1,0 +1,44 @@
+.listItem {
+}
+.container {
+  padding: 0.25rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.noChildren {
+  cursor: grab;
+}
+.expandContainer {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.5rem;
+}
+.iconContainer {
+  width: 0.725rem;
+  margin-right: 0.25rem;
+}
+.expandCollapseIcon {
+  /* transition: transform 200ms ease-in; */
+}
+.expandedIcon {
+  transform: rotate(90deg);
+}
+/* .expandIcon::after {
+  content: "";
+  border: 1px solid #595959;
+  border-top: none;
+  border-left: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  transform: rotate(-45deg);
+} */
+.icon {
+  margin-right: 0.25rem;
+  color: #0090f9;
+}
+.text {
+  /* cursor: grab; */
+}

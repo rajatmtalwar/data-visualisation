@@ -1,0 +1,72 @@
+.wrapper {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.label {
+  margin-right: 1rem;
+  width: 4rem;
+  text-align: right;
+}
+.dropArea {
+  flex-grow: 1;
+  position: relative;
+  min-height: 1.5rem;
+}
+.columnWrapper {
+  composes: wrapper;
+}
+.columnLabel {
+  composes: label;
+}
+.columnDropArea {
+  composes: dropArea;
+}
+.rowWrapper {
+  composes: wrapper;
+}
+.rowLabel {
+  composes: label;
+}
+.rowDropArea {
+  composes: dropArea;
+}
+
+.columnToken {
+  background-color: rgb(0 110 190);
+  color: #fff;
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.25rem;
+}
+.rowToken {
+  composes: columnToken;
+  background-color: hsl(205deg 100% 40%);
+}
+.dragOverlay {
+  position: absolute;
+  background: #cccccc42;
+  width: 100%;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 2px dashed #8d8d8d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8c8c8c;
+  font-weight: bold;
+}
+.highlightForDrop {
+  background: #cccccc9a;
+}
+.deleteTokenButton {
+  cursor: pointer;
+}
+.deleteTokenIcon {
+  width: 0.625rem;
+  fill: #fff;
+}
